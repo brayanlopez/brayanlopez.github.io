@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <section id="welcome-section">
+        <h1>Brayan A. López G.</h1>
+        <p>Web Developer</p>
+      </section>
+      <section id="projects">
+        <h2>These are some of my projects</h2>
+        <div id="projects-container"></div>
+      </section>
+      <section id="contact">
+        <h2>Let´s work together</h2>
+        <div class="contact-container">
+          <a
+            id="profile-link"
+            class="btn contact-details"
+            href="https://github.com/brayanlopez"
+          >
+            <i class="fab fa-github-square"></i> Github</a
+          >
+          <a class="btn contact-details" href="https://twitter.com/bryanlopezg5"
+            ><i class="fab fa-twitter-square"></i> Twitter</a
+          >
+          <a
+            class="btn contact-details"
+            href="https://www.linkedin.com/in/brayan-lopez-91ba3155/"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer id="#footer"></footer>
+    <script>
+      let dataProjects = [
+        {
+          title: "Location",
+          description: "An application, developed for the company Location.",
+          date: new Date(),
+          thechnology: ["React", "Boostrap", "HTML", "CSS", "JavaScript"],
+          url: "https://app.qrlocation.com/Login/",
+          image: "./img/qrlocation.png",
+        },
+        {
+          title: "JS Documentation",
+          description: "A documentation of the language JavaScript",
+          date: new Date(),
+          thechnology: ["HTML", "CSS", "JavaScript"],
+          url: "https://brayanlopez.github.io/javascript-simple-documentation",
+          image: "./img/jsdocumentation.png",
+        },
+        {
+          title: "Super Shoes",
+          description:
+            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+          date: new Date(),
+          thechnology: ["HTML", "CSS", "JavaScript"],
+          url: "https://brayanlopez.github.io/product-landing-page/",
+          image: "./img/supershoes.png",
+        },
+        {
+          title: "Survey form",
+          description:
+            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+          date: new Date(),
+          thechnology: ["HTML", "CSS", "JavaScript"],
+          url: "https://brayanlopez.github.io/survey-form/",
+          image: "./img/surveyform.png",
+        },
+        {
+          title: "Tribute Page",
+          description:
+            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+          date: new Date(),
+          thechnology: ["HTML", "CSS", "JavaScript"],
+          url: "https://brayanlopez.github.io/tribute-page/",
+          image: "./img/tributepage.png",
+        },
+      ];
+
+      let projectContainer = document.getElementById("projects-container");
+      elements = dataProjects.map((data) => {
+        let project = document.createElement("div");
+        project.className += "project";
+        project.innerHTML = `
+          <img class="project-image" src="${data.image}" alt="imagen del projecto" />
+          <h3 class="project-tile">${data.title}</h3>
+          <p>${data.description}</p>
+          <a
+          class="btn"
+          href="${data.url}"
+          target="_blank"
+          >See this project</a>`;
+        return project;
+      });
+      elements.map((element) => {
+        projectContainer.appendChild(element);
+      });
+    </script>
+  </body>
+</html>
