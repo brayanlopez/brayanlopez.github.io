@@ -36,6 +36,11 @@ body {
   color: var(--main-white);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #navbar {
   position: fixed;
   display: flex;
@@ -71,6 +76,7 @@ main {
 #projects {
   text-align: center;
   background-color: var(--main-blue);
+  padding-top: 35px;
 }
 
 #projects h2 {
@@ -83,7 +89,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 25px 0px;
+  margin: 25px 0px 0px 0px;
 }
 
 #projects .project {
@@ -93,8 +99,8 @@ main {
   margin: 5px;
 }
 
-.project p{
-  font-size: 12pt;  
+.project p {
+  font-size: 12pt;
   padding: 10px;
 }
 
@@ -104,6 +110,35 @@ main {
   object-fit: cover;
 }
 
+#contact {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background-color: var(--main-gray);
+  height: 100vh;
+}
+
+#contact h2 {
+  font-size: 30pt;
+  margin: 20px 0px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-details {
+  font-size: inherit;
+  transition: font-size ease-in 0.7s;
+}
+
+.contact-details:hover {
+  font-size: 25pt;
+}
 
 @media (max-width: 550px) {
   #navbar {
@@ -120,4 +155,3 @@ main {
     max-width: 100%;
   }
 }
-

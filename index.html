@@ -20,7 +20,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <main>
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
       <section id="welcome-section">
         <h1>Brayan A. López G.</h1>
         <p>Web Developer</p>
@@ -50,67 +50,34 @@
         </div>
       </section>
     </main>
-    <footer id="#footer"></footer>
-    <script>
-      let dataProjects = [
-        {
-          title: "Location",
-          description: "An application, developed for the company Location.",
-          date: new Date(),
-          thechnology: ["React", "Boostrap", "HTML", "CSS", "JavaScript"],
-          url: "https://app.qrlocation.com/Login/",
-          image: "./img/qrlocation.png",
-        },
-        {
-          title: "JS Documentation",
-          description: "A documentation of the language JavaScript",
-          date: new Date(),
-          thechnology: ["HTML", "CSS", "JavaScript"],
-          url: "https://brayanlopez.github.io/javascript-simple-documentation",
-          image: "./img/jsdocumentation.png",
-        },
-        {
-          title: "Super Shoes",
-          description:
-            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
-          date: new Date(),
-          thechnology: ["HTML", "CSS", "JavaScript"],
-          url: "https://brayanlopez.github.io/product-landing-page/",
-          image: "./img/supershoes.png",
-        },
-        {
-          title: "Survey form",
-          description:
-            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
-          date: new Date(),
-          thechnology: ["HTML", "CSS", "JavaScript"],
-          url: "https://brayanlopez.github.io/survey-form/",
-          image: "./img/surveyform.png",
-        },
-        {
-          title: "Tribute Page",
-          description:
-            "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
-          date: new Date(),
-          thechnology: ["HTML", "CSS", "JavaScript"],
-          url: "https://brayanlopez.github.io/tribute-page/",
-          image: "./img/tributepage.png",
-        },
-      ];
+    <footer id="footer"></footer>
 
+    <script src="data.js"></script>
+    <script>
       let projectContainer = document.getElementById("projects-container");
       elements = dataProjects.map((data) => {
         let project = document.createElement("div");
         project.className += "project";
         project.innerHTML = `
-          <img class="project-image" src="${data.image}" alt="imagen del projecto" />
-          <h3 class="project-tile">${data.title}</h3>
-          <p>${data.description}</p>
-          <a
-          class="btn"
-          href="${data.url}"
-          target="_blank"
-          >See this project</a>`;
+        <a class="btn" href="${data.url}" target="_blank">
+            <img
+              class="project-image"
+              src="${data.image}"
+              alt="imagen del projecto"
+            />
+            <h3 class="project-tile">${data.title}</h3>
+            <p>${data.description}</p>
+        </a>
+        `;
+        // project.innerHTML = `
+        // <a class="btn" href="${data.url}" target="_blank">
+        //   <img
+        //     class="project-image"
+        //     src="${data.image}"
+        //     alt="imagen del projecto"
+        //   />
+        //   <h3 class="project-tile">${data.title}</h3>
+        // </a>`;
         return project;
       });
       elements.map((element) => {
