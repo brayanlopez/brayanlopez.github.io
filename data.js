@@ -9,7 +9,7 @@ let dataProjects = [
   },
   {
     title: "JS Documentation",
-    description: "A documentation of the language JavaScript",
+    description: "A basic documentation of the language JavaScript. Based in a project from FreeCodeCamp",
     date: new Date("02-07-2021"),
     thechnology: ["HTML", "CSS", "JavaScript"],
     url: "https://brayanlopez.github.io/javascript-simple-documentation",
@@ -18,7 +18,7 @@ let dataProjects = [
   {
     title: "Super Shoes",
     description:
-      "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+      "A landing page of a shoe store. Based in a project from FreeCodeCamp.",
     date: new Date("01-07-2021"),
     thechnology: ["HTML", "CSS", "JavaScript"],
     url: "https://brayanlopez.github.io/product-landing-page/",
@@ -27,7 +27,7 @@ let dataProjects = [
   {
     title: "Survey form",
     description:
-      "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+      "A basic survey form. Based in a project from FreeCodeCamp",
     date: new Date("24-06-2021"),
     thechnology: ["HTML", "CSS", "JavaScript"],
     url: "https://brayanlopez.github.io/survey-form/",
@@ -36,7 +36,7 @@ let dataProjects = [
   {
     title: "Tribute Page",
     description:
-      "A tribute page to Dr. Norman Borlaug, based in the page of FCC",
+      "A tribute page to Dr. Norman Borlaug. Based in a project from FreeCodeCamp",
     date: new Date("24-06-2021"),
     thechnology: ["HTML", "CSS", "JavaScript"],
     url: "https://brayanlopez.github.io/tribute-page/",
