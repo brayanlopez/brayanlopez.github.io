@@ -139,19 +139,3 @@ main {
 .contact-details:hover {
   font-size: 25pt;
 }
-
-@media (max-width: 550px) {
-  #navbar {
-    justify-content: space-around;
-  }
-  #navbar a {
-    padding: 0px;
-  }
-  #projects h2 {
-    width: 90%;
-  }
-  #projects .project {
-    width: 90%;
-    max-width: 100%;
-  }
-}
