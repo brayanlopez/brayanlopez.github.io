@@ -84,8 +84,8 @@ a {
 #projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1%;
-  grid-row-gap: 1.5%;
+  grid-gap: 1rem;
+  grid-row-gap: 1.5rem;
   margin: 25px;
 }
 
