@@ -6,6 +6,15 @@ const socialNetwork = [
 
 const dataProjects = [
   {
+    title: "Blog",
+    description:
+      "Basic Blog using Astro",
+    date: new Date("01-01-2024"),
+    thechnology: ["Astro","HTML", "CSS", "JavaScript"],
+    url: "https://brayanlopez.github.io/blog/",
+    image: "default.jpg",
+  },
+  {
     title: "NFT Preview Card Component",
     description:
       "Card component of an NFT. Based on the first Front-end Mentor challenge",
