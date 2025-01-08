@@ -1,16 +1,33 @@
-const socialNetwork = [
+export const socialNetwork = [
   { name: "Github", url: "https://github.com/brayanlopez" },
   { name: "Twitter", url: "https://twitter.com/bryanlopezg5" },
   { name: "LinkedIn", url: "https://www.linkedin.com/in/brayanlopezg/" },
 ];
 
-const dataProjects = [
+export const dataProjects = [
+  {
+    title: "QuestionApp",
+    description:
+      "Page with questions about different topics to study and practice.",
+    date: new Date("01-01-2025"),
+    thechnology: ["React", "Material UI", "MathJax"],
+    url: "https://brayanlopez.github.io/questionapp/",
+    image: "default.jpg",
+  },
+  {
+    title: "Games",
+    description:
+      "Basic page with different games like Breakout, snake and others.",
+    date: new Date("01-01-2025"),
+    thechnology: ["HTML", "CSS", "JavaScript"],
+    url: "https://brayanlopez.github.io/games/",
+    image: "default.jpg",
+  },
   {
     title: "Blog",
-    description:
-      "Basic Blog using Astro",
+    description: "Basic Blog using Astro",
     date: new Date("01-01-2024"),
-    thechnology: ["Astro","HTML", "CSS", "JavaScript"],
+    thechnology: ["Astro", "HTML", "CSS", "JavaScript"],
     url: "https://brayanlopez.github.io/blog/",
     image: "default.jpg",
   },
