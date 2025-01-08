@@ -1,10 +1,30 @@
 export const socialNetwork = [
-  { name: "Github", url: "https://github.com/brayanlopez" },
-  { name: "Twitter", url: "https://twitter.com/bryanlopezg5" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/brayanlopezg/" },
+  {
+    name: "Github",
+    url: "https://github.com/brayanlopez",
+    icon: "fa-github-square",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/bryanlopezg5",
+    icon: "fa-twitter-square",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/brayanlopezg/",
+    icon: "fa-linkedin",
+  },
 ];
 
 export const dataProjects = [
+  {
+    title: "Portafolio Camila Perez",
+    description: "Basic portfolio created for Camila Perez.",
+    date: new Date("01-01-2025"),
+    thechnology: ["React", "Material UI", "vite"],
+    url: "https://camilapereza.github.io/",
+    image: "default.jpg",
+  },
   {
     title: "QuestionApp",
     description:

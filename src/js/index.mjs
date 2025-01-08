@@ -26,8 +26,33 @@ const createProjects = () => {
   elements.map((element) => projectContainer.appendChild(element));
 };
 
+const createSocialNetworks = () => {
+  const contactContainer =
+    document.getElementsByClassName("contact-container")[0];
+
+  let socialNetworkContent = ``;
+
+  socialNetwork.map((socialNetwork) => {
+    socialNetworkContent += `
+      <a
+        id="profile-link"
+        class="btn contact-details"
+        href="${socialNetwork.url}"
+      >
+        <i class="fab ${socialNetwork.icon}"></i> ${socialNetwork.name}
+      </a>
+    `;
+  });
+  console.log(
+    "🚀 ~ createSocialNetworks ~ socialNetworkContent:",
+    socialNetworkContent
+  );
+  contactContainer.innerHTML = socialNetworkContent;
+};
+
 const main = () => {
   createProjects();
+  createSocialNetworks();
 };
 
 main();
