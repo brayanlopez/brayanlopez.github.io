@@ -18,6 +18,14 @@ export const socialNetwork = [
 
 export const dataProjects = [
   {
+    title: "Flutter Portfolio",
+    description: "Basic portfolio created with Flutter.",
+    date: new Date("01-01-2025"),
+    thechnology: ["Dart", "Flutter"],
+    url: "https://brayanlopez.github.io/flutter-portfolio/",
+    image: "default.jpg",
+  },
+  {
     title: "Portafolio Camila Perez",
     description: "Basic portfolio created for Camila Perez.",
     date: new Date("01-01-2025"),
