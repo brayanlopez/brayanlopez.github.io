@@ -18,6 +18,30 @@ export const socialNetwork = [
 
 export const dataProjects = [
   {
+    title: "ECYTV tools",
+    description: "Webpage with useful information for ECYTV students",
+    date: new Date("01-01-2025"),
+    thechnology: ["JavaScript", "CSS", "HTML"],
+    url: "https://brayanlopez.github.io/ecytv-tools/",
+    image: "default.jpg",
+  },
+  {
+    title: "Cinema roles",
+    description: "a webpage with lists of roles in cinema industry",
+    date: new Date("01-01-2025"),
+    thechnology: ["JavaScript", "CSS", "HTML"],
+    url: "https://brayanlopez.github.io/cinema-roles/",
+    image: "default.jpg",
+  },
+  {
+    title: "React User Dashboard",
+    description: "A user dashboard",
+    date: new Date("01-01-2025"),
+    thechnology: ["React"],
+    url: "https://brayanlopez.github.io/react-user-dashboard/login",
+    image: "default.jpg",
+  },
+  {
     title: "Flutter Portfolio",
     description: "Basic portfolio created with Flutter.",
     date: new Date("01-01-2025"),
@@ -71,7 +95,7 @@ export const dataProjects = [
   {
     title: "Markdown Previewer",
     description:
-      "A markdown previe, change meanwhile the user write markdown code. Based on a FreeCodeCamp project",
+      "A markdown previewer, change meanwhile the user write markdown code. Based on a FreeCodeCamp project",
     date: new Date("11-11-2023"),
     thechnology: ["React", "Material UI", "marked"],
     url: "https://brayanlopez.github.io/markdown-previewer/",
